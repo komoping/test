@@ -1,4 +1,4 @@
-prefix=/home/e219/test/install
+prefix=/home/iclab-public/test/install
 
 Name: example
 Description: Description of example

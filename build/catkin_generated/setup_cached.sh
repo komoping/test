@@ -7,5 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/opt/ros/melodic/lib'
-export PWD='/home/e219/test/build'
+export CMAKE_PREFIX_PATH="/home/iclab-public/test/devel:$CMAKE_PREFIX_PATH"
+export PWD='/home/iclab-public/test/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/iclab-public/test/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/iclab-public/test/src:$ROS_PACKAGE_PATH"

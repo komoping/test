@@ -1,8 +1,8 @@
-# Install script for directory: /home/e219/test/src/example
+# Install script for directory: /home/iclab-public/test/src/example
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/e219/test/install")
+  set(CMAKE_INSTALL_PREFIX "/home/iclab-public/test/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/e219/test/build/example/catkin_generated/installspace/example.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/iclab-public/test/build/example/catkin_generated/installspace/example.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/example/cmake" TYPE FILE FILES
-    "/home/e219/test/build/example/catkin_generated/installspace/exampleConfig.cmake"
-    "/home/e219/test/build/example/catkin_generated/installspace/exampleConfig-version.cmake"
+    "/home/iclab-public/test/build/example/catkin_generated/installspace/exampleConfig.cmake"
+    "/home/iclab-public/test/build/example/catkin_generated/installspace/exampleConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/example" TYPE FILE FILES "/home/e219/test/src/example/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/example" TYPE FILE FILES "/home/iclab-public/test/src/example/package.xml")
 endif()
 
