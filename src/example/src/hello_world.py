@@ -2,10 +2,10 @@
 import rospy
 rospy.init_node("hello_python_node")
 rospy.loginfo("hello world")
-print("user_name: iclab_xiao_ming" )
-password=input("please input password:")
-code="aa"
-if password==code:
-    print("login successfully")
-else:
-    print("password not correct")
+
+for i in range(1,10):
+   for j in range(1,10):
+       print("%d*%d=%2d\t"%(i,j,i*j),end='')
+   print("\n")
+
+
