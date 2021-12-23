@@ -2,4 +2,4 @@
 source_root_dir = '/home/iclab-public/test/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/opt/ros/melodic'.split(';') if '/opt/ros/melodic' != '' else []
+underlay_workspaces = '/home/iclab-public/kidsize_gz/devel;/opt/ros/melodic'.split(';') if '/home/iclab-public/kidsize_gz/devel;/opt/ros/melodic' != '' else []
