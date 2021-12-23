@@ -14,3 +14,4 @@ int main(int argc,char **argv)
         ROS_INFO("a = %5d b = %f c = %f ",a,b,c);
         return 0;
 }
+

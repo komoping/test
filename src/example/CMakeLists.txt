@@ -55,6 +55,10 @@ find_package(catkin REQUIRED COMPONENTS
 #   Message2.msg
 # )
 
+add_message_files(DIRECTORY msg
+           FILES
+           answer.msg
+)
 ## Generate services in the 'srv' folder
 # add_service_files(
 #   FILES
@@ -74,6 +78,11 @@ find_package(catkin REQUIRED COMPONENTS
 #   DEPENDENCIES
 #   std_msgs
 # )
+
+generate_messages(
+     DEPENDENCIES
+     std_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -107,7 +116,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES example
-#  CATKIN_DEPENDS message_generation message_runtime roscpp rospy std_msgs
+#  CATKIN_DEPENDS message_generation message_runtime roscpp std_msgs
 #  DEPENDS system_lib
 )
 
@@ -141,6 +150,18 @@ target_link_libraries(C_one ${catkin_LIBRARIES})
 
 add_executable(C_two src/C_two.cpp)
 target_link_libraries(C_two ${catkin_LIBRARIES})
+
+add_executable(C_third src/C_third.cpp)
+target_link_libraries(C_third ${catkin_LIBRARIES})
+
+add_executable(C_four src/C_four.cpp)
+target_link_libraries(C_four ${catkin_LIBRARIES})
+
+add_executable(talker src/talker.cpp)
+target_link_libraries(talker ${catkin_LIBRARIES})
+
+add_executable(listener src/listener.cpp)
+target_link_libraries(listener ${catkin_LIBRARIES})
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the

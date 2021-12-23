@@ -11,5 +11,6 @@ export CMAKE_PREFIX_PATH="/home/iclab-public/test/devel:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/iclab-public/test/devel/lib:$LD_LIBRARY_PATH"
 export PKG_CONFIG_PATH="/home/iclab-public/test/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/iclab-public/test/build'
+export PYTHONPATH="/home/iclab-public/test/devel/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES='/home/iclab-public/test/devel/share/common-lisp'
 export ROS_PACKAGE_PATH="/home/iclab-public/test/src:$ROS_PACKAGE_PATH"
